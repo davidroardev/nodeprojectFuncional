@@ -5,7 +5,7 @@ import { authenticateToken } from "../middleware/authorization";
 export const categoriesRoutes = Router();
 
 categoriesRoutes.get('/categories',authenticateToken, getCategories);
-categoriesRoutes.get('/categories/:id',authenticateToken, getCategoriesById);
+categoriesRoutes.get('/getCategoriesById/:id',authenticateToken, getCategoriesById);
 categoriesRoutes.post('/createCategories',authenticateToken, createCategories);
 categoriesRoutes.delete('/deleteCategories/:id',authenticateToken, deleteCategories);
 categoriesRoutes.put('/updateCategories/:id',authenticateToken, updateCategories);
