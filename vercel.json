@@ -5,7 +5,7 @@
         "use":"@vercel/node"
     }],
     "routes":[{
-        "scr":"/(*)",
+        "src":"/(*)",
         "dest":"lib/app.js"
     }]
 
