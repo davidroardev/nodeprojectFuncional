@@ -18,7 +18,7 @@ export const generateToken = async (req: Request, response:Response): Promise<Re
 };
 
 export const createUser = async (req: Request, res: Response): Promise<Response> => {
-    const {userName, password, email} = req.body;
+    const {userName, password, email} = req.body; //esto tiene que coincidir con el lugar donde pruebo el endpoint
     if (userName !== null && password !== null && email !== null){
         try {
             await pool.query('INSERT INTO users (username, password, email) values ($1, $2, $3)',
